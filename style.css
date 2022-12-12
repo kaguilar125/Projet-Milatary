@@ -1,0 +1,149 @@
+/*// BASE STYLES //*/
+
+html, body{
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.dirt, .sky, .road{
+  position: relative;
+}
+
+.sky{
+  height: 40%;
+  background: #9fd8fb;
+}
+
+.dirt{
+  height: 30%;
+  background: #C4A484;
+}
+
+.road{
+  height: 30%;
+  background: dimgrey;
+  box-sizing: border-box;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  width: 100%;
+}
+
+.lines{
+  box-sizing: border-box;
+  border: 5px dashed #fff;
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  top: 45%;
+}
+
+/*// ELEMENTS TO ANIMATE //*/
+.Jet{
+  position: absolute;
+  top:-775px;
+  left: 0px;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: Jet;
+  transform: scale(.5);
+  animation-iteration-count: 3;
+}
+.Jet2{
+  position: absolute;
+  top:-700px;
+  left: 100px;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: Jet2;
+  transform: scale(.5);
+  animation-iteration-count: 3;
+}
+.Jet3{
+  position: absolute;
+  top:-600px;
+  left: 0;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: Jet3;
+  transform: scale(.5);
+  animation-iteration-count: 3;
+}
+
+.Tank1{
+  position: absolute;
+  top: -70px;
+  left: 0px;
+  animation-name: Tank1;
+  animation-duration: 15s;
+  animation-fill-mode: both;
+  transform: scale(.5);
+  animation-iteration-count: 3;
+ 
+}
+
+.Tank2{
+  position: absolute;
+  top: -10px;
+  left: 100px;
+  animation-name: Tank2;
+  animation-duration: 15s;
+  animation-fill-mode: both;
+  transform: scale(.5);
+  animation-iteration-count: 3;
+}
+
+.Tank3{
+  position: absolute;
+  top: 80px;
+  left: px;
+  animation-name: Tank2;
+  animation-duration: 15s;
+  animation-fill-mode: both;
+  transform: scale(.5);
+  animation-iteration-count: 3;
+}
+
+.Tank1, .Tank2, .Tank3 {
+  max-width: 250px;
+}
+
+.Sun{
+  position: absolute;
+  top:-200px;
+  left: 100px;
+  animation-duration: 10s;
+  animation-fill-mode: both;
+  animation-name: Sun;
+  transform: scale(.5);
+}
+
+
+/*// KEYFRAMES //*/
+
+@keyframes Jet{
+  from{ transform: translateX(-800px) scale(.5) ;}
+  to{ transform: translateX(2000px) scale(.5);}
+}
+
+@keyframes Jet2{
+  from{ transform: translateX(-800px) scale(.5) ;}
+  to{ transform: translateX(2000px) scale(.5);}
+}
+
+@keyframes Jet3{
+  from{ transform: translateX(-800px) scale(.5) ;}
+  to{ transform: translateX(2000px) scale(.5);}
+}
+
+@keyframes Tank1{
+  from{ transform: translateX(-200px);}
+  to{ transform: translateX(2000px);}
+}
+
+@keyframes Tank2{
+  from{ transform: translateX(-200px);}
+  to{ transform: translateX(2000px);}
+}
+
